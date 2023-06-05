@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/estilosProyecto.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet"   href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Ejercicio proyecto</title>
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/635ad548e0.js" crossorigin="anonymous"></script>    
+
+    <div class="contenedor-menu">         
+        <div class="logo">
+            <a href=""> <img src="imagenes/Vintage_pepsi_logo.jpg"></a> 
+        </div>   
+        <nav>  
+            <ul class="menu_items" id="otroModo">
+                <a href="#"><i class="fas fa-home"></i> Inicio</a>
+                <a href="#"><i class="fas fa-graduation-cap"></i> Tutoriales</a>
+                <a href="#"> <i class="fas fa-chalkboard"></i> Cursos</a>
+                <a href="#"><i class="fas fa-school"></i> Bootcamps</a>
+                <a href="#"><i class="fas fa-users"></i> Contacto</a>
+            </ul> 
+            <span class="btn_menu" >
+                <i class="fas fa-bars"></i>
+            </span>
+        </nav> 
+    </div>
+
+    <header>
+        <div class="swiper">
+           <!-- Additional required wrapper -->
+           <div class="swiper-wrapper">
+             <!-- Slides -->
+             <div class="swiper-slide"><img src="imagenes/capacitacionin.jpeg" class="imagenPrimera">
+              </div>
+             <div class="swiper-slide"><img src="imagenes/capacitacionin.jpeg" class="imagenPrimera" ></div>
+            
+           </div>
+           <!-- If we need pagination -->
+           <div class="swiper-pagination"></div>
+         
+           <!-- If we need navigation buttons -->
+           <div class="swiper-button-prev"></div>
+           <div class="swiper-button-next"></div>
+         
+           <!-- If we need scrollbar -->
+           <div class="swiper-scrollbar"></div>
+         </div>
+     </header>
+<a href="https://wa.me/5211234567890?text=Me%20gustaría%20saber%20el%20precio%20del%20coche" class="whatsapp" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
+</div>
+<section>
+<article>
+  <div class="contenedorparrafo">
+    <br>
+ <h1 class="contenedorparrrafo___titulo">¿Porque Elegirnos?</h1>
+ <p>Somos el término adecuado para tu negocio. Tenemos la experiencia y el conocimiento para ofrecer servicios de consultoría, asesoría, capacitación, entrenamiento, y auditorías imparciales a un precio justo. Con nosotros te sentirás escuchado. Atendemos los requisitos de nuestros clientes y brindamos la solución adecuada y personalizada que mejor se ajuste a tu necesidad. Cuidamos tu negocio como si fuera nuestro. Nos interesamos en que tu empresa alcance su excelencia operaciona
+</p>  
+</div>  
+<h1 class="tituloServicios">Conoce nuestros servicios</h1>
+<div class="contenedorservicios">
+<div class="elemento contenedorservicios__caja1">
+<img src="imagenes/edtechcoronavirus.jpg" class="imagenSliderPrimera">    
+<h1>Programas abiertos</h1>  
+<p>Para la participación del público en general, mediante modalidad sincrónica (tiempo real) o asincrónica (tiempo diferido).
+</p>
+</div>
+<div class="elemento contenedorservicios__caja2">
+    <img src="imagenes/capacitacionin.jpeg">    
+    <h1>Capacitacion in house</h1>  
+    <p>Grupos cerrados con programas personalizados para la necesidad de tu organización, en modalidad presencial, remota y mixta..
+    </p>
+    </div>
+    <div class="elemento contenedorservicios__caja3">
+        <img src="imagenes/webin.png" >    
+        <h1>Webinar</h1>  
+        <p>Participa con nosotros mediante difusión informativa y de interés en temas variados, de la mano con nuestros expertos.
+        </p>
+        </div>
+</div>
+</article>    
+</section>                
+ <footer>
+ <div class="contenedorfooter">
+    <div class="element contenedorfooter__caja1">
+        <h1>contacto</h1>
+    <ul>
+         <i class="fa-solid fa-map-pin"></i>Av. del Bombero Frente a Ciudadela Los Ceibos. Guayaquil
+         <br>
+         <i class="fa-solid fa-phone"></i>0991168710<br>
+         <br>
+        <i class="fa-solid fa-envelope"></i>correo@correo.com
+    </ul>
+        </div>  
+        <div class="element contenedorfooter__caja2">              
+            <h1>Nosotros</h1>  
+            <p class="parrafoFooter">Somos un equipo multidisciplinario de profesionales que tiene el objetivo de brindar soluciones integrales con el propósito de incrementar el valor a tu compañía mediante nuestros servicios exclusivos.
+            </p>
+            </div>
+            <div class="element contenedorfooter__caja3">
+                <h1>Redes sociales</h1>
+                <ul>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>   
+                    <i class="fa-brands fa-twitter"></i>
+                </ul>
+                    </div>   
+ </div>
+ </footer>           
+ <script>
+    const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
+
+
+const hamburger = document.querySelector('.btn_menu');
+const menu = document.querySelector('.menu_items');
+
+hamburger.addEventListener('click', () => {
+  menu.classList.toggle('show');
+});
+</script>
+</body>
+</html>

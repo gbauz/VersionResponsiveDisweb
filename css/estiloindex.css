@@ -1,0 +1,140 @@
+/*Ejemplo de selector universal*/
+/* EL SELECTOR UNIVERSAL SE DENOTA CON EL *  */
+/*EL SELECTOR ID SE DENOTA CON EL #*/
+/*EL SELECTOR DE CLASE SE DENOTA CON EL .*/
+/*EL SELECTOR DE VARIABLE SE DENOTA CON LA SIGUIENTE SINTAXIS
+variable="tituloPrincipal" => EN CSS se denota como
+[variable="tituloPrincipal"]{
+    PROPIEDADES DE CSS
+}
+MEDIDAS EN CSS
+-PX EM REM
+em=16px
+2em=32px
+4em=64px
+
+METODOLOGIA BEM
+-BLOCK BLOQUE
+-ELEMENT ELEMENTO
+-MODIFIER MODIFICADOR
+
+*** TEXT ALIGN
+-LEFT
+-RIGHT
+-CENTER
+-JUSTIFY
+
+---PSEUDOELEMENTOS/PSEUDOCLASES
+-FIRST LINE
+SELECTION
+BEFORE
+AFTER
+HOVER
+--POSITION 
+-ABSOLUTE
+-RELATIVE
+*/
+.contenedorPrincipal{
+    margin:150px 80px 45px 20px;      
+    background-color: orange;
+    padding-left:90px;
+}
+.contenedorPrincipal__titulo{   
+    font-size: 30px;
+    color:orange;
+    font-weight: bold;
+}
+.contenedor-aside__primario{
+    background-color: brown;
+    color:white;
+  
+    display:block;
+    padding: 25px;
+    margin:20px;
+}
+.contenedor-aside__secundario{
+    background-color: brown;
+    
+    color:white;
+    display:block;
+    padding: 25px;
+    margin:20px;
+}
+.seccionNoticias{
+    margin:80px;
+    background-color: rgb(21, 115, 183);
+    border:10px solid red;
+    width: 350px;
+    height:320px;
+    overflow: hidden;
+    overflow-y:scroll;
+    font-size: 25px;
+}
+.seccionNoticias__parrafo::before{
+    content:"HOLA SOY UN PSEUDOELEMENTO ANTES";
+    background-color: rgba(178, 214, 15, 0.831);
+    color:#fff;    
+}
+.seccionNoticias__parrafo::after{
+    content:"HOLA SOY UN PSEUDOELEMENTO DESPUES";
+    background-color: rgba(243, 68, 9, 0.831);
+    color:#fff;    
+}
+img{
+ border-radius: 20px;
+}
+#Titulotablas:hover{
+ background-color: rgb(78, 76, 76);
+ color:white;
+}
+.contenedorPosition___imagen{
+    width: 350px;
+    height: 150px;
+    position:relative;
+}
+.contenedorPosition___parrrafo{
+    top:1640px;
+    left:70px;
+    font-size: 20px;
+    color:#fff;
+    background-color: rgb(60, 55, 55);
+    position:absolute;
+}
+.contenedortutoria__imagen{
+    background-image:linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ), url(../imagenes/empresa.jpg);
+    padding: 25px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:250px;    
+    min-width:109vh; 
+    color:white;
+    font-size: 30px;
+    text-align: center;
+}
+/*Diseño parte central*/
+header{
+    position: relative;
+    height: 100 vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: orange;
+    padding-bottom: 60px;   
+   }
+   .contenedorHeader{    
+    color:#fff;
+    text-align: center;
+}   
+.wave{
+    position:absolute;
+    bottom:0;
+    left:0;
+    width: 100%;
+}   
+.contenedorHeader___imagen{
+    padding:30px;
+}

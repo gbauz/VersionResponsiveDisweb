@@ -1,0 +1,207 @@
+*{
+    margin:0;
+    padding:0;
+}
+html,
+body {
+width:100%;
+overflow-x: hidden;
+}
+
+/*Diseño del menu*/
+.contenedor-menu{
+  display: flex;
+  justify-content: space-between;
+  background-color: orange;
+  height: 70px;
+  padding: 10px;
+  align-items: center;
+}
+
+.btn_menu{
+  margin-right: 50px;
+  font-size: 25px;
+  color: #FFF;
+  cursor: pointer;
+  display: none;
+}
+
+.logo{
+  display: flex;
+}
+
+.logo img{
+  height: 50px;
+}
+
+nav a {
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+  margin: 15px;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+}
+
+nav a:hover{
+  background-color: rgb(83, 81, 79);   
+  padding: 15px;
+}
+
+.menu_items {
+  display: flex;
+  align-items: center;
+}
+
+/*Diseño de Banner*/
+
+.whatsapp{
+  position:fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;  
+  background-color:#25d366;
+  color:#fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  z-index: 100;
+}
+.whatsapp:hover{
+  background-color: rgb(75, 71, 71);
+}
+.whatsapp-icon{
+  margin-top: 13px;
+}
+.contenedorparrafo{
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Roboto', sans-serif;
+}
+.tituloServicios{
+  text-align: center; font-size: 40px; font-family: 'Roboto', sans-serif; text-transform: uppercase;
+}
+.contenedorparrrafo___titulo{
+  font-size: 40px;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+.contenedorservicios{
+  display: flex;
+}
+.elemento {
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Roboto', sans-serif;
+  margin: 10px;
+  padding: 25px;
+  box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+}
+.elemento img{
+  width: 90%;
+  height: 210px;
+  padding: 15px;
+}
+.swiper { 
+  width: 100%;
+  height: 500px;
+}
+.imagenPrimera{
+  height: 555px;
+  width: 100%;
+  object-fit:cover;
+}
+/*Diseño de pie de página*/
+.contenedorfooter{
+  display: flex;
+  background-color: rgb(64, 62, 62);
+  color:#fff;
+}
+.parrafoFooter{
+  font-size:25px;
+}
+.element{
+  font-size: 25px;
+  margin:10px;
+  padding: 55px;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+.contenedorfooter__caja1{
+  width: 250px;
+}
+.contenedorfooter__caja2{
+  width: 450px;
+}
+.contenedorfooter__caja3{
+  width: 150px;
+}
+.element h1{
+  font-size: 30px;
+}
+.element p{
+  text-align: justify;
+}
+/* VERSION MOVIL*/
+
+@media screen and (max-width: 767px) {
+  .btn_menu{
+      display: block;
+  }    
+  .menu_items {
+     background-color: rgb(52, 50, 47);
+      position:fixed;
+      width: 100%;
+      height: 100vh;      
+      top: 70px;
+      left: -100%;
+      text-align: center;
+      transition: all .4s;
+      flex-direction: column;
+      z-index: 99;
+
+  }  
+  .show {
+      left: 0;
+  }
+  /*Diseño slider Movil*/
+  .swiper { 
+    width: 100%;
+    height: 300px;
+  }
+  .imagenPrimera{
+    height: 355px;    
+    width: 100%;
+    object-fit:cover;
+  }
+  /*Diseño Banner Movil*/
+  .contenedorparrrafo___titulo{
+    font-size: 25px;
+    text-align: center;
+  }
+  .contenedorparrafo{
+    font-size: 20px;
+    text-align: justify;
+    padding: 25px;
+  }
+  .tituloServicios{
+    font-size: 25px;
+    text-align: center;
+  }
+  .contenedorservicios{
+    display: flex;
+    flex-direction: column;
+  }
+  /*Diseño Movil*/
+  .contenedorfooter{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .parrafoFooter{
+    font-size: 15px;
+  }
+}

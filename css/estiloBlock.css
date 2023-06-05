@@ -1,0 +1,67 @@
+
+.headers{
+    background-color: brown;
+    color:white;
+    display:block;
+    padding: 25px;
+    margin:20px;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+}
+.navs{
+    background-color: rgb(28, 85, 166);
+    color:white;
+    display:block;
+    padding: 25px;
+    margin:20px;
+    height:50px;
+    font-size: 20px;
+    text-align: center;
+}
+.articles{
+    background-color: rgb(12, 118, 74);
+    color:white;
+    display:inline-block;
+    padding: 25px;
+    margin:20px;
+    width: 550px;
+    height:280px;
+    font-size: 20px;
+    text-align: center;
+}
+.asides{
+    background-color: rgb(91, 109, 9);
+    color:white;
+    display:inline-block;
+    padding: 25px;
+    margin:20px;
+    height:280px;
+    width: 550px;
+    font-size: 20px;
+    text-align: center;
+}
+.footers{
+    background-color: rgb(165, 42, 159);
+    color:white;
+    display:block;
+    padding: 25px;
+    margin:20px;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+}
+/*Ejemplo de resposive design*/
+@media screen and (max-width:767px){
+    .articles{
+        background-color: rgb(241, 234, 23);
+        color:white;
+        display:inline-block;
+        padding: 25px;
+        margin:20px;
+        width: 350px;
+        height:280px;
+        font-size: 20px;
+        text-align: center;
+    }
+}

@@ -1,0 +1,51 @@
+.contenedor{
+    display: flex;
+    flex-direction: column;
+}
+.elemento{
+    font-size: 45px;
+    text-align: center;
+    margin: 20px;
+    padding: 25px;
+    color:#fff;
+}
+.contenedor___caja1{
+    background-color: orange;
+}
+.contenedor___caja2{
+    background-color: green;
+}
+.contenedorSecundario{
+    display: flex;
+    justify-content: space-around;
+}
+.elementoSe{
+    height: 250px;
+    width: 550px;
+    font-size: 45px;
+    text-align: center;
+    margin: 20px;
+    padding: 25px;
+    color:#fff; 
+}
+.contenedorSecundario___caja1{
+    background-color: red;
+}
+.contenedorSecundario___caja2{
+    background-color: violet;
+}
+.contenedorTerciario{
+    display: flex;
+    flex-direction: column;
+}
+.elementoTer{
+    
+    font-size: 45px;
+    text-align: center;
+    margin: 20px;
+    padding: 25px;
+    color:#fff; 
+}
+.contenedorTerciario___caja1{
+    background-color: rgb(255, 0, 106);
+}
